@@ -125,3 +125,62 @@ h2{
     width: 150px;
     height: 150px;
 }
+
+@media (max-width: 1200px) {
+    h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .textbox {
+        width: 90%;
+        margin-left: 5%;
+        height: 40px;
+    }
+
+    .gen, .dwn {
+        width: 45%;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .textbox {
+        width: 70%;
+        margin-left: 60px;
+        height: 40px;
+    }
+
+    .gen, .dwn {
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    .dwn {
+        margin-top: 5%;
+    }
+}
