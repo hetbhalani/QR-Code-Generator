@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -168,18 +169,18 @@ h2{
         width: 90%;
         height: auto;
         padding: 10px;
-        margin-left: 20px;
+        margin-left: 18px;
     }
 
     .textbox {
-        width: 70%;
-        margin-left: 50px;
+        width: 75%;
+        margin-left: 45px;
         height: 40px;
     }
 
     .gen, .dwn {
         width: 50%;
-        margin-left: 95px;
+        margin-left: 87px;
     }
 
     .dwn {

@@ -8,7 +8,10 @@ function genQr() {
     qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(textbox.value);
     qrImg.style.display = "block";
     card.style.height = "32rem";
+    textbox.style.height= "2rem";
     
+    // generate.style.marginTop = "70px";
+    qrImg.style.marginTop = "50px"
     download.disabled = false;
    
 }
