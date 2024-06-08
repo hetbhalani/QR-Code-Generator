@@ -46,7 +46,7 @@ h2{
 .textbox{
     text-align: start;
     width: 80%;
-    height: 13%;
+    height: 40px;
     margin-top: 30px;
     margin-left: 40px;
     border: 1px solid #ccc; 
@@ -146,16 +146,27 @@ h2{
         padding: 20px;
     }
 
+    .search{
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px;
+    }
     .textbox {
-        width: 90%;
-        margin-left: 5%;
-        height: 40px;
+        width: 85%;
+        height: 50px;
+        margin-right: 40px;
     }
 
-    .gen, .dwn {
-        width: 45%;
-        margin-left: 160px;
+    .btns{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap; 
         margin-top: 40px;
+    }
+    .gen, .dwn {
+        width: 40%;
+        margin: 10px;
     }
 }
 
@@ -172,15 +183,29 @@ h2{
         margin-left: 18px;
     }
 
+    .search{
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px;
+    }
     .textbox {
-        width: 75%;
-        margin-left: 45px;
-        height: 40px;
+        width: 85%;
+        height: 50px;
+        margin-right: 35px;
+
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        margin-top: 40px;
     }
 
     .gen, .dwn {
-        width: 50%;
-        margin-left: 87px;
+        width: 45%;
+        margin: 10px;
     }
 
     .dwn {
