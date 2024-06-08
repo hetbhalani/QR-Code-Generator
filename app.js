@@ -7,7 +7,7 @@ const qrImg = document.getElementById("qrImg");
 function genQr() {
     qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(textbox.value);
     qrImg.style.display = "block";
-    card.style.height = "30rem";
+    card.style.height = "32rem";
     
     download.disabled = false;
    
