@@ -5,15 +5,34 @@ const textbox = document.querySelector(".textbox");
 const qrImg = document.getElementById("qrImg");
 
 function genQr() {
+    
+    if(textbox.value == ""){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            html: "<p>Please enter a URL to generate the QR code!</p>",
+            customClass: {
+                popup: 'swal-custom-popup',
+                title: 'swal-custom-title',
+                content: 'swal-custom-content',
+            }
+        });
+
+        textbox.style.border = "3px solid black";
+        textbox.placeholder = "Please enter a URL here";
+
+        return;
+    }
     qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(textbox.value);
     qrImg.style.display = "block";
     card.style.height = "32rem";
     textbox.style.height= "2rem";
+    textbox.style.border = ""
     
     // generate.style.marginTop = "70px";
     qrImg.style.marginTop = "50px"
     download.disabled = false;
-   
+
 }
 
 function downloadQr() {
@@ -49,3 +68,7 @@ textbox.addEventListener("keydown", function(event) {
 download.disabled = true;
 // downloadButton.addEventListener("click", downloadQrCode);
 download.onclick = downloadQr;
+
+textbox.addEventListener('focus', function() {
+    textbox.style.border = '';
+});
