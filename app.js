@@ -43,8 +43,13 @@ function downloadQr() {
 
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
-            link.download = "QR_Code.png";
 
+            if(textbox.value.includes('http')){
+                link.download = "QR_Code.png";
+            }
+            else{
+                link.download = textbox.value.charAt(0).toUpperCase() + textbox.value.slice(1) + "_QR_Code.png";
+            }
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
