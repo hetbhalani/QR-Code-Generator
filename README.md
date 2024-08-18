@@ -2,7 +2,7 @@
 
 I made this using simple HTML,CSS and Javascript with the use of API.
 <br>
-You can Download the QR Code also.
+You can Generate and Download the QR Code.
 <br>
 
 # Use
